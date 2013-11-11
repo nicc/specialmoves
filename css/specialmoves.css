@@ -1,0 +1,38 @@
+html, body { height:100% }
+
+#background {
+  z-index:1;
+  
+  /* pin to top left */
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+	
+  /* Fill and preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  
+  max-width: 175%;
+  max-height: 135%;
+}
+
+#logo {
+  z-index:2;
+  
+  /* center image */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -295px;
+  margin-top: -166px;
+}
+
+#email {
+  z-index:3;
+  
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -150px;
+  
+}
