@@ -9,10 +9,9 @@ html, body { height:100%; margin: 0; }
   right: 0; 
 	
   /* Fill and preserve aspet ratio */
-  min-width: 100%;
+  
   min-height: 100%;
   
-  max-width: 175%;
   max-height: 135%;
 }
 
@@ -30,9 +29,26 @@ html, body { height:100%; margin: 0; }
 #email {
   z-index:3;
   
+  bottom: 0;
   position: absolute;
   left: 50%;
+  position: fixed;
   bottom: 0;
-  margin-left: -150px;
-  
+  margin-left: -295px;
+}
+
+@media all and (min-width: 590px) {
+  #background {
+    min-width: 100%;
+    max-width: 250%;
+  }
+}
+
+@media all and (max-width: 590px) {
+  .scales {
+    left: 0 !important;
+    max-width: 100% !important;
+    position: absolute !important;
+    margin-left: 0 !important;
+  }
 }
